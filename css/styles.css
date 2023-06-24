@@ -17,12 +17,8 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height:100vmin /*  838px; */;
+    height:max-content /*  838px; */;
     width: 100%;
-}
-
-.hero {
-    position: relative;
 }
 
 ol {
@@ -124,6 +120,8 @@ img {
     align-items: center;
     height: 764px;
     justify-content: flex-end;
+    border: 1px solid red;
+    padding: 50px;
 }
 
 .top {
@@ -256,11 +254,11 @@ img {
     outline-offset: -5px;
 }
 
-.tax {      
-    position: fixed;
-    bottom: 15px;
-    color: #fff;
-     min-width: max-content;
-     /* height: fit-content; */
+.tax {
+display: flex;
+justify-content: center;
+    border: 1px solid red;
+    color: #fff;    
      font-size: 14px;
+     padding: 10px;
 }
