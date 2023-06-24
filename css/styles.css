@@ -1,0 +1,266 @@
+@font-face{font-family:Gotham SSm;font-weight:700;font-display:swap;font-style:normal;src:url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Bold_Web.woff2) format("woff2")}@font-face{font-family:Gotham SSm;font-weight:500;font-display:swap;font-style:normal;src:url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Medium_Web.woff2) format("woff2")}@font-face{font-family:Gotham SSm;font-weight:400;font-display:swap;font-style:normal;src:url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Book_Web.woff2) format("woff2")}@font-face{font-family:Gotham SSm;font-weight:300;font-display:swap;font-style:normal;src:url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Light_Web.woff2) format("woff2")}@font-face{font-family:Gotham SSm;font-weight:200;font-display:swap;font-style:normal;src:url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-XLight_Web.woff2)}
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: "Gotham SSm", "Segoe UI", 'Roboto', "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Model-3-Main-Hero-Desktop-LHD');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height:100vmin /*  838px; */;
+    width: 100%;
+}
+
+.hero {
+    position: relative;
+}
+
+ol {
+    list-style: none;
+}
+
+a, a:link {
+    text-decoration: none;
+    color: #fff;
+}
+
+img {
+    width: 100vh;
+}
+
+/* HERO - NAVBAR */
+.navbar {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.navbar .left {  
+    display: flex; 
+    align-items: center;
+    flex-shrink: 0;
+    padding-left: 3em;
+}
+
+.navbar .logo {  
+    max-width: 120px;  
+}
+
+.navbar .center {  
+    display: flex; 
+    justify-content: center;
+    align-items: center;      
+    padding: 0 1em;
+}
+
+.navbar .center ol {        
+    display: flex;        
+    gap: 2em;
+}
+
+.navbar .center ol li {        
+    flex-shrink: 0;
+     min-width: max-content;
+}
+
+.navbar .right {        
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center;      
+    padding: 0 2em;
+}
+
+.navbar .right ol {
+    display: flex;
+    gap: 2em;
+}
+
+.navbar .right ol li {        
+    flex-shrink: 1;
+}
+
+  
+  .navbar .left .logo svg {
+    width: 100%; 
+  }
+
+  .left, .left .logo {
+    display: flex;
+  }
+
+  .left .logo  {
+    flex: 1;
+  }
+
+  
+@media screen and (max-width: 1220px) {
+    .navbar .center > ol {
+        display: none;
+    }
+    .navbar .right ol li:not(:last-child) {
+        display: none;
+      }
+
+}
+  
+/*  HERO - SHOWCASE */
+.showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 764px;
+    justify-content: flex-end;
+}
+
+.top {
+    position: absolute;
+    top: 118px; 
+    width: 100%;   
+    color: #fff;
+    font-weight: 200px;    
+}
+
+.showcase .top h1 {
+    display: flex;    
+    justify-content: center;
+    font-size: 39px;    
+    height: 48px;    
+}
+
+.showcase .top h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    padding: 7px;
+}
+
+.showcase .top a {
+    text-decoration: underline;
+}
+
+.showcase .bottom {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    /* justify-content: center;        */
+    align-items: center; 
+    width: 492px;    
+    height: 118px;     
+    gap: 2em;
+    color: #fff;
+}
+
+.bottom ol {
+    display: flex;
+    justify-content: space-around;    
+    width: 540px; 
+}
+ 
+.bottom li svg {
+    width: 20px;
+    height: 20px;
+}
+
+.bottom li h3
+{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;    
+}
+
+.bottom li h4
+  {
+    font-size: 20px;
+}
+
+.bottom li p {    
+    align-items: center;    
+}
+
+.speed h3 {
+    width: 43px;    
+}
+.range h3 {
+    width: 74px;    
+}
+.credit h3 {
+    width: 107px;    
+}
+
+.bottom li div{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase .bottom .buttons {
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    width: 492px;
+    gap: 2em; 
+}
+
+.showcase .bottom button {
+    width: 235px;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 5px 27px;
+}
+
+.showcase .bottom .btn-light {
+    background: transparent;
+    border: solid 3.5px #fff;
+    color: #fff;
+    font-size: 14px;
+}
+.showcase .bottom .btn-light:hover {
+    background: #fff;
+    color: #000;
+}
+.showcase .bottom .btn-light:active {
+    background: transparent;
+    color: #fff;
+    font-size: 14px;
+}
+
+.showcase .bottom  .btn-dark {
+    color: #000;
+    font-size: 14px;
+    border-radius: 5px;
+    border: #00000000 1px solid;
+}
+
+.showcase .bottom  .btn-dark:hover {
+    background: #e2e3e3;
+}
+
+.showcase .bottom  .btn-dark:active {
+    outline: solid 2px #000;
+    outline-offset: -5px;
+}
+
+.tax {      
+    position: fixed;
+    bottom: 15px;
+    color: #fff;
+     min-width: max-content;
+     /* height: fit-content; */
+     font-size: 14px;
+}
