@@ -1,52 +1,63 @@
 @font-face{font-family:Gotham SSm;font-weight:700;font-display:swap;font-style:normal;src:url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Bold_Web.woff2) format("woff2")}@font-face{font-family:Gotham SSm;font-weight:500;font-display:swap;font-style:normal;src:url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Medium_Web.woff2) format("woff2")}@font-face{font-family:Gotham SSm;font-weight:400;font-display:swap;font-style:normal;src:url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Book_Web.woff2) format("woff2")}@font-face{font-family:Gotham SSm;font-weight:300;font-display:swap;font-style:normal;src:url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Light_Web.woff2) format("woff2")}@font-face{font-family:Gotham SSm;font-weight:200;font-display:swap;font-style:normal;src:url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-XLight_Web.woff2)}
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
     font-family: "Gotham SSm", "Segoe UI", 'Roboto', "Helvetica Neue", Arial, sans-serif;
 }
 
 
+
 .container {
-    border: 1px solid red;
     display: flex;
     flex-direction: column; 
     justify-content: flex-start;
     align-items: start;
     width: 100%;    
     gap: 1em;
-    background-color: #c3c3c3;
 }
 
 .img-container {
-    background-color: rgba(83, 255, 198, 0.649);
     position: relative;
-    border: 1px solid red;
+    font-weight: 200px;
     margin: 20px auto;
     width: 90%;
     max-width: 1200px;
     height: 60vw;
     max-height: 800px;
     gap: 1em;
+    background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/model-3-hero-a-desktop');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .box {
-    background-color: rgba(54, 138, 110, 0.462);
     position: absolute;
     right: 0;
     top: 0;       
 }
 
 #box1 {
-    background-color: rgba(138, 97, 54, 0.462);
-    height: 131px;
-    width: 50%;
-    top: 10%;
+    height: 135px;
+    width: 590px;
+    top: 13%;
     right: 0;
+}
+
+#box2 {
+    height: 220px;
+    width: 850px;
+    top: 23%;
+}
+
+#box3 {
+    height: 180px;
+    width: 560px;
+    top: 59%;
+    right: 0;    
 }
 
 .dot {
@@ -54,39 +65,23 @@
     width: 11px;
     height: 11px;
     background-color: white;
-    border: 2px solid black;
+    border: 2.5px solid black;
     border-radius: 50%;
-    left: -6px;
+    left: -7px;
   }
   
 #box1 .dot , #box2 .dot {
-    bottom: -4px;
+    bottom: -5px;
   }
 
 #box3 .dot {
-    top: -4px;
+    top: -1px;
   }
-
-#box2 {
-    background-color: rgba(183, 255, 39, 0.462);
-    height: 220px;
-    width: 62.5%;
-    top: 20%;
-}
-
-
-#box3 {
-    background-color: rgba(39, 53, 255, 0.462);
-    height: 180px;
-    width: 41.7%;
-    top: 50%;
-    right: 0;    
-}
 
 .border-anim {
     position: absolute;
     height: 100%;
-    width: 4px;
+    width: 3.23px;
     top: 0;
     left: -3px;
     background-color: #000;
@@ -104,15 +99,18 @@
   }
 
 
-
 .info {
-    border: 1px solid red;
     margin: 0 auto;
     width: 90%;
     max-width: 1116px;
     height: 400px; 
     gap: 1em;
 }
+
+.info a:link, a:visited {    
+    color:#000;
+}
+
 .feature {
     position: absolute;
     width: fit-content;  
@@ -121,7 +119,7 @@
 }
 
 #box1 .feature, #box2 .feature {
-    top: -35px;
+    top: -15.5px;
   }
 
 #box3 .feature {
@@ -134,28 +132,24 @@
     }
 
     .box {
-        background-color: rgba(54, 138, 110, 0.462);
         position: absolute;
         right: 0;
         top: 0;        
     }
     
     #box1 {
-        background-color: rgba(138, 97, 54, 0.462);
         height: 15%;
         width: 50%;
         top: 10%;
         right: 0;
     }
     #box2 {
-        background-color: rgba(183, 255, 39, 0.462);
         height: 229px;
         width: 62.5%;
         top: 20%;
         right: 0;
     }
     #box3 {
-        background-color: rgba(39, 53, 255, 0.462);
         height: 180px;
         width: 41.7%;
         top: 50%;
@@ -170,31 +164,56 @@
         height: auto;
     }
     .box {
-        background-color: rgba(54, 138, 110, 0.462);
         position: absolute;
         right: 0;
         top: 0;        
     }
     
     #box1 {
-        background-color: rgba(138, 97, 54, 0.462);
         height: 23%;
         width: 50%;
         top: 10%;
         right: 0;
     }
     #box2 {
-        background-color: rgba(183, 255, 39, 0.462);
         height: 229px;
         width: 62.5%;
         top: 20%;
         right: 0;
     }
     #box3 {
-        background-color: rgba(39, 53, 255, 0.462);
         height: 180px;
         width: 41.7%;
         top: 50%;
         right: 0;
     }
 }
+  
+  .chapter2 .info {
+    display: flex;
+    flex-direction: column; 
+    justify-content:flex-start;
+    align-items: start;
+    width: 1116px;    
+    height: 400px;  
+    gap: 1em;
+}
+
+.chapter2 .info .awards {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 14px;    
+}
+.chapter2 .info .awards h2{
+    font-size: 28px;
+}
+.chapter2 .info .awards h4,
+.chapter2 .info .awards h5
+{
+    font-size: 1em;
+}
+    
+.chapter2 .info .awards .category {
+    width: 579px;
+}
+  
