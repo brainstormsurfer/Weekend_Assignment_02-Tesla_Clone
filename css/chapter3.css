@@ -1,0 +1,140 @@
+@font-face{font-family:Gotham SSm;font-weight:700;font-display:swap;font-style:normal;src:url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Bold_Web.woff2) format("woff2")}@font-face{font-family:Gotham SSm;font-weight:500;font-display:swap;font-style:normal;src:url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Medium_Web.woff2) format("woff2")}@font-face{font-family:Gotham SSm;font-weight:400;font-display:swap;font-style:normal;src:url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Book_Web.woff2) format("woff2")}@font-face{font-family:Gotham SSm;font-weight:300;font-display:swap;font-style:normal;src:url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Light_Web.woff2) format("woff2")}@font-face{font-family:Gotham SSm;font-weight:200;font-display:swap;font-style:normal;src:url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-XLight_Web.woff2)}
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+    font-family: "Gotham SSm", "Segoe UI", 'Roboto', "Helvetica Neue", Arial, sans-serif;
+}
+
+a:link, a:visited {    
+    color: #000;
+}
+
+.chapter3 .container {
+    width: 100%;    
+    color: #000; 
+    gap: 1em;
+    background-color: #c3c3c3;
+}
+
+.img-container {
+    display: flex;
+    background-color: rgb(123, 238, 238);
+    margin: 20px auto;
+    width: 1572px;
+    height: 500px;
+    gap: 1em;
+}
+
+.chapter3 aside {
+    display: flex;      
+    width: 198.5px;    
+    height: 100%;     
+    padding-left: 64px;
+    /* flex-shrink: 0; */
+    /* flex-wrap: nowrap; */
+}
+
+aside ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;   
+    list-style: none;
+    font-weight: bolder;
+}
+ 
+aside .li-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+}
+
+ol li h3
+{
+    font-size: 24px;
+}
+
+ol li h4
+  {
+    font-size: 20px;
+}
+
+aside .li-container .title {
+    display: flex;
+    height: 53.96px;
+}
+aside .li-container .desc {
+    display: flex;
+    height: 25.97px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.info {    
+    display: flex;
+    justify-content: center;
+    width: 100%;    
+    height: 196px; 
+    padding: 24px 0 40px;
+}
+
+.info .left {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 432px;      
+    height: 132px;
+    padding: 16px;
+}
+
+.info .right {
+    display: flex;    
+    width: 660px;      
+    height: 132px;
+    padding: 16px;
+}
+
+.info .left h2 {
+    width: 100%;
+    height: 65px;
+    font-size: 1.7em;
+    padding-bottom: 16px;
+    font-weight: 500;
+}
+
+.info .left .btn-container {
+    width: 100%;
+    height: 65px;
+}
+
+.info .left button {
+    width: 204px;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 5px 27px;
+}
+
+.info .left .btn-style3 {
+    background: #fff;
+    border: solid 3.5px #000;
+    color: #000;
+    font-size: 14px;
+    outline: none;
+    /* border: ; */
+}
+
+.info .left .btn-style3:hover {
+    background: #000;
+    border: none;
+    color: #fff;
+}
+
+.info  .btn-style3:active {
+    outline: solid 2px #fff;
+    outline-offset: -5px;
+}

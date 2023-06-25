@@ -234,34 +234,34 @@ img {
     padding: 5px 27px;
 }
 
-.showcase .bottom .btn-light {
+.showcase .bottom .btn-style2 {
     background: transparent;
     border: solid 3.5px #fff;
     color: #fff;
     font-size: 14px;
 }
-.showcase .bottom .btn-light:hover {
+.showcase .bottom .btn-style2:hover {
     background: #fff;
     color: #000;
 }
-.showcase .bottom .btn-light:active {
+.showcase .bottom .btn-style2:active {
     background: transparent;
     color: #fff;
     font-size: 14px;
 }
 
-.showcase .bottom  .btn-dark {
+.showcase .bottom  .btn-style1 {
     color: #000;
     font-size: 14px;
     border-radius: 5px;
     border: #00000000 1px solid;
 }
 
-.showcase .bottom  .btn-dark:hover {
+.showcase .bottom  .btn-style1:hover {
     background: #e2e3e3;
 }
 
-.showcase .bottom  .btn-dark:active {
+.showcase .bottom  .btn-style1:active {
     outline: solid 2px #000;
     outline-offset: -5px;
 }
@@ -285,32 +285,8 @@ margin-bottom: 10px;
     align-items: center;
   }
   
-  .image {
-    max-width: 100%;
-    height: auto;
-  }
-  .layer-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   
-  .layer {
-    width: 80%;
-    max-width: 1000px;
-    height: 100px;
-    background-color: rgba(0, 0, 0, 0.5);
-    margin-bottom: 20px;
-  }
- 
-  
-  .chapter2 .safety {
+  .chapter2 .info {
     border: 1px solid red;
     display: flex;
     flex-direction: column; 
@@ -321,21 +297,21 @@ margin-bottom: 10px;
     gap: 1em;
 }
 
-.chapter2 .safety .awards {
+.chapter2 .info .awards {
     display: flex;
     justify-content: flex-start;
     font-size: 14px;    
 }
-.chapter2 .safety .awards h2{
+.chapter2 .info .awards h2{
     font-size: 28px;
 }
-.chapter2 .safety .awards h4,
-.chapter2 .safety .awards h5
+.chapter2 .info .awards h4,
+.chapter2 .info .awards h5
 {
     font-size: 1em;
 }
     
-.chapter2 .safety .awards .category {
+.chapter2 .info .awards .category {
     width: 579px;
 }
   
