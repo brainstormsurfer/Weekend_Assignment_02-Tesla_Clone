@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
     font-family: "Gotham SSm", "Segoe UI", 'Roboto', "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -15,19 +14,23 @@ a:link, a:visited {
 }
 
 .chapter3 .container {
-    width: 100%;    
+    width: 100%;
+    height: 100%;    
     color: #000; 
     gap: 1em;
-    background-color: #c3c3c3;
 }
 
 .img-container {
-    display: flex;
-    background-color: rgb(123, 238, 238);
+    display: flex;    
     margin: 20px auto;
-    width: 1572px;
-    height: 500px;
+    width: 100%;
+    height: 893px;
     gap: 1em;
+    background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-3-Range-Hero-Desktop-NA');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* background-attachment: fixed; */
 }
 
 .chapter3 aside {
@@ -35,22 +38,14 @@ a:link, a:visited {
     width: 198.5px;    
     height: 100%;     
     padding-left: 64px;
-    /* flex-shrink: 0; */
-    /* flex-wrap: nowrap; */
 }
 
 aside ol {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;   
     list-style: none;
-    font-weight: bolder;
-}
- 
-aside .li-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%; 
+    justify-content: space-evenly;   
+    align-items: flex-start;
 }
 
 ol li h3
@@ -64,14 +59,14 @@ ol li h4
 }
 
 aside .li-container .title {
-    display: flex;
-    height: 53.96px;
+    display: flex;    
+    padding-bottom: 10px;
 }
-aside .li-container .desc {
-    display: flex;
-    height: 25.97px;
+
+aside .li-container .desc {    
     font-size: 12px;
     white-space: nowrap;
+    font-weight: bolder;
 }
 
 .info {    
@@ -80,6 +75,7 @@ aside .li-container .desc {
     width: 100%;    
     height: 196px; 
     padding: 24px 0 40px;
+    gap: 5em;
 }
 
 .info .left {
