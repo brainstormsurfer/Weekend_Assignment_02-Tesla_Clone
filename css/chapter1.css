@@ -1,0 +1,395 @@
+@import '../src/assets/fonts/fonts.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gotham SSm', 'Roboto', "Helvetica Neue", Arial, sans-serif;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.chapter1 {
+  background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Model-3-Main-Hero-Desktop-LHD");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  background-attachment: fixed;
+  position: relative;
+  padding-top: 53px;
+}
+
+.commercial {
+  height: 53px;
+  width: 100vw;
+  box-shadow: inset 25px 25px 50px 20px #020315;
+  color: #fff;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: space-evenly;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.commercial img {
+  width: 16px;
+  height: 16px;
+}
+
+ol {
+  list-style: none;
+}
+
+a,
+a:link {
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  width: 100vh;
+}
+
+/* HERO - NAVBAR */
+
+.navbar {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.navbar .left {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding-left: 3em;
+}
+
+.navbar .logo {
+  max-width: 120px;
+}
+
+.navbar .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1em;
+}
+
+.navbar .center ol {
+  display: flex;
+  gap: 2em;
+}
+
+.navbar .center ol li {
+  flex-shrink: 0;
+  min-width: max-content;
+}
+
+.navbar .right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 2em;
+}
+
+.navbar .right ol {
+  display: flex;
+  gap: 2em;
+}
+
+.navbar .right ol li {
+  flex-shrink: 1;
+}
+
+.navbar .left .logo svg {
+  width: 100%;
+}
+
+.left,
+.left .logo {
+  display: flex;
+}
+
+.left .logo {
+  flex: 1;
+}
+
+
+/*  HERO -.showcase */
+.showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 841px;
+  justify-content: flex-end;
+}
+
+.showcase-top {
+  position: absolute;
+  top: 155.56px;
+  width: 100%;
+  color: #fff;
+}
+
+.showcase .showcase-top h1 {
+  display: flex;
+  justify-content: center;  
+  font-size: 39px;
+  height: 48px;
+  font-weight: 400;
+}
+
+.showcase .showcase-top h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  font-weight:400;
+  padding: 7px;
+}
+
+.showcase .showcase-top a {
+  text-decoration: underline;
+}
+
+.showcase .showcase-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 540px;
+  padding: 0 24px;
+  color: #fff;
+}
+
+.showcase .showcase-bottom ol {
+  display: flex;
+  justify-content: center;
+  width: 492px;
+  margin-bottom: 16px;
+  gap: 1em;
+}
+
+.showcase .showcase-bottom ol li {
+  display: flex;
+  justify-content: center;
+  width: 130.3px;
+  height: 54px;
+}
+
+.showcase .showcase-bottom ol .li-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;  
+}
+.showcase .showcase-bottom .li-container .title-top {
+   display: flex;
+   align-items: end;
+}
+
+.showcase .showcase-bottom .svg-container {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.showcase .showcase-bottom .svg-container svg {
+  width: 100%;
+  height: 100%;
+}
+
+.showcase-bottom .li-container .title-l,
+.showcase-bottom .li-container .title-m {
+  display: flex;  
+  justify-content: center;  
+  font-size: 24px;
+  font-weight: 400;
+  min-height: min-content;
+}
+.showcase-bottom .li-container .title-m {
+  font-size: 20px;
+}
+
+.showcase-bottom .li-container .desc {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.showcase .showcase-bottom .buttons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 492px;
+  gap: 2em;
+}
+
+.showcase .showcase-bottom button {
+  width: 235px;
+  height: 40px;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 5px 27px;
+}
+
+.showcase .showcase-bottom .btn-style2 {
+  background: transparent;
+  border: solid 3.5px #fff;
+  color: #fff;
+  font-size: 14px;
+}
+.showcase .showcase-bottom .btn-style2:hover {
+  background: #fff;
+  color: #000;
+}
+.showcase .showcase-bottom .btn-style2:active {
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+}
+
+.showcase .showcase-bottom .btn-style1 {
+  color: #000;
+  font-size: 14px;
+  border-radius: 5px;
+  border: #00000000 1px solid;
+}
+
+.showcase .showcase-bottom .btn-style1:hover {
+  background: #e2e3e3;
+}
+
+.showcase .showcase-bottom .btn-style1:active {
+  outline: solid 2px #000;
+  outline-offset: -5px;
+}
+
+.showcase-bottom .tax {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 32px;
+  padding: 8px 24px;
+  white-space: nowrap;
+}
+
+/* ? ================= ? */
+/* ? ================= ? */
+/* ? ================= ? */
+
+/* SMARTPHONE */
+@media only screen and (min-width: 441px) and (max-width: 599px) {
+  .chapter1 {
+    background-image: url("../src/assets/img/Model-3.png");
+    background-size: calc(min(100%) + auto);
+    background-position: cover;
+  }
+
+  .showcase {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    height:867.83px;
+  }
+
+.showcase-bottom {       
+    width: 327px;
+    height: 167px;
+    align-content:flex-end;
+    flex:1;
+  }
+
+  .showcase .showcase-bottom ol {
+    display: flex;
+    justify-content: center;
+    width: 327px;    
+    height: fit-content;
+  }
+  
+.showcase .showcase-bottom ol li {
+    width: 130.3px;
+    height: 35px;
+  }
+  
+.showcase .showcase-bottom .buttons {
+    display: block;
+  }
+  .showcase .showcase-bottom button {
+    display: block;
+    margin: 10px auto;
+    width: 327px;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 5px 27px;
+  }
+  .showcase-bottom .li-container .title-l,
+.showcase-bottom .li-container .title-m {  
+  font-size: 20px;
+}
+
+.showcase-bottom .li-container .title-m {
+  font-size: 17px;
+}
+
+.showcase-bottom .li-container .desc {
+  font-size: 10px;
+  font-weight: 100;
+}
+  .showcase-bottom .tax {        
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 521px;
+    white-space: wrap;
+    height: 36px;
+    color: #fff;
+    font-size: 12px;
+    padding: 0 24px;
+  }
+
+
+}
+
+/* TABLET */
+
+@media screen and (min-width: 600px) {
+        .chapter1 {
+            background-image: url('../src/assets/img/Model-3.png');            
+            
+            background-size: calc(min(100%) + auto) calc(min(100%) + auto);
+            background-position: top top;                        
+            
+        }
+  }
+
+
+  @media screen and (min-width: 601px) and (max-width: 1220px) {
+    .navbar .center > ol {
+      display: none;
+    }
+    .navbar .right ol li:not(:last-child) {
+      display: none;
+    }
+  }

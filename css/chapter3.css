@@ -1,40 +1,49 @@
-@font-face{font-family:Gotham SSm;font-weight:700;font-display:swap;font-style:normal;src:url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Bold_Web.woff2) format("woff2")}@font-face{font-family:Gotham SSm;font-weight:500;font-display:swap;font-style:normal;src:url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Medium_Web.woff2) format("woff2")}@font-face{font-family:Gotham SSm;font-weight:400;font-display:swap;font-style:normal;src:url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Book_Web.woff2) format("woff2")}@font-face{font-family:Gotham SSm;font-weight:300;font-display:swap;font-style:normal;src:url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Light_Web.woff2) format("woff2")}@font-face{font-family:Gotham SSm;font-weight:200;font-display:swap;font-style:normal;src:url(https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-XLight_Web.woff2)}
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-
+@import '../src/assets/fonts/fonts.css';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Gotham SSm", "Segoe UI", 'Roboto', "Helvetica Neue", Arial, sans-serif;
+} 
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 a:link, a:visited {    
     color: #000;
 }
 
-.chapter3 .container {
-    width: 100%;
-    height: 100%;    
-    color: #000; 
-    gap: 1em;
+body {
+    margin: 0;
 }
 
-.img-container {
-    display: flex;    
-    margin: 20px auto;
+.chapter3 .container {
     width: 100%;
     height: 893px;
-    gap: 1em;
+    padding-top: 74px;
+    color: #000; 
+    font-family: "Gotham SSm", "Segoe UI", 'Roboto', "Helvetica Neue", Arial, sans-serif;
+}
+
+.chapter3 .img-container {
+    border: purple 5px solid;
+    display: flex;    
+    margin: 20px 0;
+    height: 443px;
     background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-3-Range-Hero-Desktop-NA');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    /* background-attachment: fixed; */
 }
 
 .chapter3 aside {
     display: flex;      
+    flex-shrink: 0;
     width: 198.5px;    
     height: 100%;     
     padding-left: 64px;
@@ -48,25 +57,29 @@ aside ol {
     align-items: flex-start;
 }
 
-ol li h3
+aside ol li {
+    max-height: min-content;
+}
+
+aside ol li h3
 {
     font-size: 24px;
+    font-weight: 500;
+    max-height: min-content;
 }
 
-ol li h4
-  {
-    font-size: 20px;
-}
-
-aside .li-container .title {
-    display: flex;    
-    padding-bottom: 10px;
+aside .li-container .title-l {
+    display: flex;
+    font-size:24px;   
+    height: 50px;
+    max-height: min-content;
 }
 
 aside .li-container .desc {    
     font-size: 12px;
     white-space: nowrap;
     font-weight: bolder;
+    max-height: min-content;
 }
 
 .info {    
@@ -75,7 +88,7 @@ aside .li-container .desc {
     width: 100%;    
     height: 196px; 
     padding: 24px 0 40px;
-    gap: 5em;
+    /* gap: 5em; */
 }
 
 .info .left {
@@ -121,7 +134,6 @@ aside .li-container .desc {
     color: #000;
     font-size: 14px;
     outline: none;
-    /* border: ; */
 }
 
 .info .left .btn-style3:hover {
@@ -133,4 +145,29 @@ aside .li-container .desc {
 .info  .btn-style3:active {
     outline: solid 2px #fff;
     outline-offset: -5px;
+}
+
+
+/* SMARTPHONE */
+@media only screen and (min-width: 441px) and (max-width: 599px) {
+    .chapter3 {
+      background-image: url(".https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-3-Range-Hero-Desktop-NA");
+      /* background-size: calc(min(100%) + auto); */
+      /* background-position: cover; */
+    }
+
+    .img-container {
+        display: flex;    
+        position: relative;
+    }
+    .img-container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-shadow: inset 0px 0px 200px 0px #ff0000;
+        z-index: 100;
+        border: rgb(128, 0, 17) 5px solid;
+
+    }
 }

@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/utilities.css" />
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/chapter1.css"/>    
     <title>Chapter1</title>
   </head>
   <body class="chapter1">
+    <div class="commercial">
+      <p><code>&lt;&lt;&lt; ( Commercial <span><img src="../src/assets/img/favicon.png" alt="Tesla-Logo"></img></span> Template ) >&gt;&gt;&gt;</code> 
+      </p>
+      </div>
     <header class="hero">
       <div class="navbar">
         <div class="left">
@@ -42,66 +45,56 @@
       </div>
 
       <section class="showcase">
-        <div class="top">
+        <div class="showcase-top">
           <h1>Model 3</h1>
           <h3>
             <a href=""> Demo Drive </a>
           </h3>
         </div>
 
-        <div class="container-bottom">
-        <div class="bottom">
+        <div class="showcase-bottom">
           <ol>
             <li>
-              <div class="speed">
-                <h3>
+              <div class="li-container">
+                <div class="title-top">
+                <div class="svg-container">
                   <svg>
-                    <use
-                      xlink:href="../src/assets/svg/speedometer.svg#speedometer"
-                    ></use>
-                  </svg>
-                  3.1
-                </h3>
-                <h4>s</h4>
+                    <use xlink:href="../src/assets/svg/speed1.svg#tds-icon-performance-filled"></use>
+                  </svg>                   
+                </div>                                 
+                <h3 class="title">3.1</h3>
+                    <h4 class="title-m">s</h4>
+                    </div> 
+                    <p class="desc">0-60 mph*</p>                                  
               </div>            
             </li>
             <li>
-              <div class="range">
-                <h3>
-                  333
-                  <h4>mi</h4>
-                </h3>
+              <div class="li-container">
+                <div class="title-top">
+                <h3 class="title">333</h3>
+                <h4 class="title-m">mi</h4>
+                </div>
+                <p class="desc">Range (EPA est.)</p>
               </div>
             </li>
             <li>
-              <div class="credit">
-                <h3>$32,740</h3>
-                <h4>&#8224;</h4>
+              <div class="li-container">
+                <div class="title-top">
+                <h3 class="title">$32,740&#8224;</h3>
               </div>
-            </li>
-          </ol>
-          <ol class="description">
-            <li>
-              <p>0-60 mph*</p>
-            </li>
-            <li>
-              <p>Range (EPA est.)</p>
-            </li>
-            <li>
-              <p>After Tax Credit</p>
-            </li>
+                <p class="desc">After Tax Credit</p>
+              </div>
+              </li>
           </ol>
 
           <div class="buttons">
             <button class="btn-style1">Explore Inventory</button>
             <button class="btn-style2">Custom Order</button>  
           </div> 
-        </div>    
         <p class="tax">&#8224;Starting pre-tax price for Model 3RWD after federal tax credit.
           <a href=""> Review Eligibility</a>
         </p>  
-      </div>      
-                 
+      </div>                             
       </section>                           
     </header>
   </body>
