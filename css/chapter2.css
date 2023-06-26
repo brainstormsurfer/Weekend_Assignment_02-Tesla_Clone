@@ -94,7 +94,7 @@ body::-webkit-scrollbar {
     top: 0;
     left: -3px;
     background-color: #000;
-    animation: expand-line 3s ease-in-out;
+    animation: expand-line, 52 3s ease-in-out infinite;
   }
 
 

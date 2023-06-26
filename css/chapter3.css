@@ -31,7 +31,6 @@ body {
 }
 
 .chapter3 .img-container {
-    border: purple 5px solid;
     display: flex;    
     margin: 20px 0;
     height: 443px;
@@ -167,7 +166,5 @@ aside .li-container .desc {
         left: 0;
         box-shadow: inset 0px 0px 200px 0px #ff0000;
         z-index: 100;
-        border: rgb(128, 0, 17) 5px solid;
-
     }
 }
