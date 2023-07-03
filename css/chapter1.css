@@ -1,10 +1,10 @@
-@import '../src/assets/fonts/fonts.css';
+@import "../src/assets/fonts/fonts.css";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Gotham SSm', 'Roboto', "Helvetica Neue", Arial, sans-serif;
+  font-family: "Gotham SSm", "Roboto", "Helvetica Neue", Arial, sans-serif;
 }
 
 html,
@@ -18,11 +18,12 @@ body::-webkit-scrollbar {
 
 .container {
   position: relative;
-  width: 100%;  
+  width: 100%;
   /* ? 100% screen plus single line paragraph  */
   height: calc(max(100vh) + 3vh);
-  padding-top: 53px;
-  background: url("https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Model-3-Main-Hero-Desktop-LHD") no-repeat center center fixed;
+  padding-top: 45px;
+  background: url("https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Model-3-Main-Hero-Desktop-LHD")
+    no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -72,7 +73,7 @@ a:link {
 
 .navbar .left {
   display: flex;
-  align-items: center;  
+  align-items: center;
   flex-shrink: 0;
   padding-left: 3em;
 }
@@ -94,7 +95,7 @@ a:link {
 }
 
 .navbar .center ol li {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 .navbar .right {
@@ -122,7 +123,6 @@ a:link {
   flex: 1;
 }
 
-
 /*  HERO -.showcase */
 .showcase {
   display: flex;
@@ -142,7 +142,7 @@ a:link {
 
 .showcase .showcase-top h1 {
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   font-size: 39px;
   height: 48px;
   font-weight: 400;
@@ -152,7 +152,7 @@ a:link {
   display: flex;
   justify-content: center;
   font-size: 14px;
-  font-weight:400;
+  font-weight: 400;
   padding: 7px;
 }
 
@@ -164,7 +164,7 @@ a:link {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;  
+  align-items: center;
   width: 540px;
   padding: 0 24px;
   color: #fff;
@@ -183,23 +183,23 @@ a:link {
   display: flex;
   justify-content: center;
   width: 130.3px;
-  height: 50px;  
+  height: 50px;
 }
 
 .showcase .showcase-bottom ol .li-container {
   display: flex;
   flex-direction: column;
   justify-content: flex;
-  align-items: center; 
-  margin-right: 10px; 
-  min-width: max-content;  
+  align-items: center;
+  margin-right: 10px;
+  min-width: max-content;
   min-height: max-content;
 }
 
 .showcase .showcase-bottom .li-container .title-top {
-   display: flex;
-   justify-content: space-between;
-   align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .showcase .showcase-bottom .svg-container {
@@ -208,20 +208,20 @@ a:link {
   height: 30px;
 }
 
- .showcase .showcase-bottom .svg-container svg {
+.showcase .showcase-bottom .svg-container svg {
   margin-top: 10px;
-} 
+}
 
 .showcase-bottom .li-container .title-l,
 .showcase-bottom .li-container .title-m {
-  display: flex;  
-  justify-content: center;  
+  display: flex;
+  justify-content: center;
   font-size: 24px;
   font-weight: 400;
   min-height: min-content;
 }
 .showcase-bottom .li-container .title-m {
-  font-size: 20px;  
+  font-size: 20px;
 }
 
 .showcase-bottom .li-container .desc {
@@ -294,14 +294,16 @@ a:link {
 
 /* /... SMARTPHONE .../ */
 
-
 @media only screen and (max-width: 760px) {
+  .chapter-1 {
+    height: calc(max(100vh) + 5vh);
+  }
   .chapter1 .container {
     background-color: white;
-    background-image: url('../src/assets/img/Model-3.png');
-    background-size: calc(auto) 100%;
+    background-image: url("../src/assets/img/Model-3.png");
     background-repeat: no-repeat;
     background-position: left center;
+    background-size: calc(auto) 100%;
   }
 
   .showcase {
@@ -309,30 +311,29 @@ a:link {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: flex-end;
-    height:100vh;
+    height: calc(max(100vh) - 2px);
   }
-  
-.showcase-bottom {       
+
+  .showcase-bottom {
     width: 327px;
     height: 167px;
     display: flex;
     justify-content: center;
-    align-content:center;
-    flex:1;
+    align-content: center;
+    flex: 1;
   }
 
   .showcase .showcase-bottom ol {
-    width: 327px;    
+    width: 327px;
     height: fit-content;
   }
-  
-.showcase .showcase-bottom ol li {
+
+  .showcase .showcase-bottom ol li {
     width: 130.3px;
     height: 35px;
- 
   }
-  
-.showcase .showcase-bottom .buttons {
+
+  .showcase .showcase-bottom .buttons {
     display: block;
   }
 
@@ -342,78 +343,79 @@ a:link {
     width: 327px;
     height: 40px;
     border-radius: 5px;
-    font-weight: bold;    
+    font-weight: bold;
   }
 
-.showcase-bottom .li-container .title-l,
-.showcase-bottom .li-container .title-m {  
-  font-size: 20px;
-}
+  .showcase-bottom .li-container .title-l,
+  .showcase-bottom .li-container .title-m {
+    font-size: 20px;
+  }
 
-.showcase-bottom .li-container .title-m {
-  font-size: 17px;
-}
+  .showcase-bottom .li-container .title-m {
+    font-size: 17px;
+  }
 
-.showcase-bottom .li-container .desc {
-  font-size: 10px;
-  font-weight: 100;
-}
-  .showcase-bottom .tax {        
+  .showcase-bottom .li-container .desc {
+    font-size: 10px;
+    font-weight: 100;
+  }
+  .showcase-bottom .tax {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 521px;  
+    width: 521px;
     color: #fff;
     font-size: 12px;
-    /* margin: 20px auto; */
   }
 
   .navbar .center ol {
     display: none;
   }
+}
 
-  @media screen and (max-height: 540px) {        
-    .showcase-bottom {
-      visibility: hidden;
-    }
-      
+@media screen and (max-height: 540px) {
+  .showcase-bottom {
+    visibility: hidden;
+  }
+
   .showcase-top {
     position: absolute;
     top: 120px;
     width: 100%;
     color: #fff;
   }
-    }
 }
 
 /* /... TABLET .../ */
 
 @media screen and (min-width: 761px) and (max-width: 1200px) {
+  .chapter-1 {
+    height: calc(max(100vh) + 5vh);
+  }
 
   .chapter1 .container {
-    background-image: url("../src/assets/img/Model-3.png") no-repeat center center fixed; 
-    /* background-size: calc(min(100%) + auto); */
+    background-image: url("../src/assets/img/Model-3.png") no-repeat center
+      center fixed;
+    background-position: cover;
+    /* height: calc(max(100vh) + 6vh); */
+  }
+  .navbar .center ol {
+    display: none;
+  }
 
-    background-position: content;
+  .navbar .right ol li:not(:last-child) {
+    display: none;
   }
-        .navbar .center ol {
-          display: none;
-        }
-        
-        .navbar .right ol li:not(:last-child) {
-          display: none;
-        }
-        
-        .showcase-bottom .tax {        
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          width: 521px;
-          /* margin: 25px 0; */
-        }
-        
+
+  .showcase-bottom .tax {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 521px;
+  }
+
   .showcase {
-    height: 100vh;
-    overflow: hidden;
-    }
+    height: calc(min(95vh) + 5vh);
+    margin-bottom: -2rem;
   }
+}
