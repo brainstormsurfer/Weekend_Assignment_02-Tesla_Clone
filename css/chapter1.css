@@ -17,9 +17,11 @@ body::-webkit-scrollbar {
 }
 
 .container {
-  padding-top: 53px;
+  position: relative;
   width: 100%;  
-  height: 104vh;
+  /* ? 100% screen plus single line paragraph  */
+  height: calc(max(100vh) + 3vh);
+  padding-top: 53px;
   background: url("https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Model-3-Main-Hero-Desktop-LHD") no-repeat center center fixed;
   background-size: cover;
 }
@@ -99,9 +101,7 @@ a:link {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  /* flex-basis: 500px; */
   margin-right: 2em;
-  /* min-width: calc(min(50px)); */
 }
 
 .navbar .right ol {
@@ -128,8 +128,9 @@ a:link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 105vh;
+  height: 100vh;
   justify-content: flex-end;
+  padding-bottom: 8vh;
 }
 
 .showcase-top {
@@ -163,7 +164,7 @@ a:link {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
+  align-items: center;  
   width: 540px;
   padding: 0 24px;
   color: #fff;
@@ -250,10 +251,12 @@ a:link {
   color: #fff;
   font-size: 14px;
 }
+
 .showcase .showcase-bottom .btn-style2:hover {
   background: #fff;
   color: #000;
 }
+
 .showcase .showcase-bottom .btn-style2:active {
   background: transparent;
   color: #fff;
@@ -279,9 +282,9 @@ a:link {
 .showcase-bottom .tax {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
   color: #fff;
   font-size: 14px;
-  /* padding: 8px 24px; */
   white-space: nowrap;
 }
 
@@ -291,18 +294,7 @@ a:link {
 
 /* /... SMARTPHONE .../ */
 
-@media screen and (max-height: 540px) {        
-  .showcase-bottom {
-    visibility: hidden;
-  }
-    
-.showcase-top {
-  position: absolute;
-  top: 120px;
-  width: 100%;
-  color: #fff;
-}
-  }
+
 @media only screen and (max-width: 760px) {
   .chapter1 .container {
     background-color: white;
@@ -317,7 +309,7 @@ a:link {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: flex-end;
-    height:94vh;
+    height:100vh;
   }
   
 .showcase-bottom {       
@@ -343,6 +335,7 @@ a:link {
 .showcase .showcase-bottom .buttons {
     display: block;
   }
+
   .showcase .showcase-bottom button {
     display: block;
     margin: 10px auto 0px;
@@ -351,7 +344,8 @@ a:link {
     border-radius: 5px;
     font-weight: bold;    
   }
-  .showcase-bottom .li-container .title-l,
+
+.showcase-bottom .li-container .title-l,
 .showcase-bottom .li-container .title-m {  
   font-size: 20px;
 }
@@ -371,12 +365,25 @@ a:link {
     width: 521px;  
     color: #fff;
     font-size: 12px;
-    margin: 20px auto;
+    /* margin: 20px auto; */
   }
 
   .navbar .center ol {
     display: none;
   }
+
+  @media screen and (max-height: 540px) {        
+    .showcase-bottom {
+      visibility: hidden;
+    }
+      
+  .showcase-top {
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    color: #fff;
+  }
+    }
 }
 
 /* /... TABLET .../ */
@@ -402,11 +409,11 @@ a:link {
           flex-direction: column;
           align-items: center;
           width: 521px;
-          margin: 25px 0;
+          /* margin: 25px 0; */
         }
         
   .showcase {
-    height: 95vh;
+    height: 100vh;
     overflow: hidden;
     }
   }

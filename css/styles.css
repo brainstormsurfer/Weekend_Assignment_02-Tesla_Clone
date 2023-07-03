@@ -34,3 +34,7 @@ embed {
     height: 100vh;
     border: none;
 }
+
+.main-container {
+  position: relative;
+}
