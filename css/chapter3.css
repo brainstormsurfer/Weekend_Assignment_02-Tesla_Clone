@@ -6,13 +6,17 @@
     box-sizing: border-box;
 } 
 
-html, body {
-    scroll-behavior: smooth;
+html,
+body {
+  scroll-behavior: smooth;
 }
+
 
 body::-webkit-scrollbar {
     display: none;
-}
+    overflow-y: scroll;
+} 
+
 
 a:link, a:visited {    
     color: #000;

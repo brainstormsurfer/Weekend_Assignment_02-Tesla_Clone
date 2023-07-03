@@ -7,20 +7,26 @@
   font-family: "Gotham SSm", "Roboto", "Helvetica Neue", Arial, sans-serif;
 }
 
-html,
-body {
+
+
+html, body {  
   scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
 body::-webkit-scrollbar {
   display: none;
-}
+  overflow-y: scroll;
+} 
+
 
 .container {
   position: relative;
   width: 100%;
   /* ? 100% screen plus single line paragraph  */
-  height: calc(max(100vh) + 3vh);
+  min-height: 100cqh;
+  max-height: calc(max(100cqh) + 2rem);
+  overflow: hidden;
   padding-top: 45px;
   background: url("https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Model-3-Main-Hero-Desktop-LHD")
     no-repeat center center fixed;
@@ -295,9 +301,17 @@ a:link {
 /* /... SMARTPHONE .../ */
 
 @media only screen and (max-width: 760px) {
-  .chapter-1 {
-    height: calc(max(100vh) + 5vh);
-  }
+  
+body::-webkit-scrollbar {
+  overflow-y: auto;
+  display: none;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+
   .chapter1 .container {
     background-color: white;
     background-image: url("../src/assets/img/Model-3.png");
@@ -367,13 +381,17 @@ a:link {
     color: #fff;
     font-size: 12px;
   }
-
+ 
   .navbar .center ol {
+    display: none;
+  }
+
+  .navbar .right ol li:not(:last-child) {
     display: none;
   }
 }
 
-@media screen and (max-height: 540px) {
+@media screen and (max-height: 600px) {
   .showcase-bottom {
     visibility: hidden;
   }
@@ -389,6 +407,16 @@ a:link {
 /* /... TABLET .../ */
 
 @media screen and (min-width: 761px) and (max-width: 1200px) {
+  
+body::-webkit-scrollbar {
+  overflow-y: auto;
+  display: none;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
   .chapter-1 {
     height: calc(max(100vh) + 5vh);
   }
@@ -397,8 +425,9 @@ a:link {
     background-image: url("../src/assets/img/Model-3.png") no-repeat center
       center fixed;
     background-position: cover;
-    /* height: calc(max(100vh) + 6vh); */
+    height: calc(max(100vh) + 10vh);
   }
+
   .navbar .center ol {
     display: none;
   }
@@ -414,8 +443,7 @@ a:link {
     width: 521px;
   }
 
-  .showcase {
-    height: calc(min(95vh) + 5vh);
-    margin-bottom: -2rem;
-  }
+  /* .showcase {
+    height: calc(max(100%) + 5%);
+  } */
 }

@@ -8,12 +8,16 @@
     box-sizing: border-box;
 }
 
-html, body {    scroll-behavior: smooth;
-  }
   
+html, body, embed {
+  scroll-behavior: smooth;
+}
+
   body::-webkit-scrollbar {
         display: none;
-  }
+        overflow-y: scroll;
+  } 
+  
 
   .main-container {
     width: 100%;
@@ -33,8 +37,4 @@ embed {
     width: 100%;
     height: 100vh;
     border: none;
-}
-
-.main-container {
-  position: relative;
 }
