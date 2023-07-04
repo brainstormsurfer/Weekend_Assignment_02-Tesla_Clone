@@ -1,217 +1,288 @@
-@import '../src/assets/fonts/fonts.css';
+@import "../src/assets/fonts/fonts.css";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Gotham SSm", "Segoe UI", 'Roboto', "Helvetica Neue", Arial, sans-serif;
-} 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gotham SSm", "Segoe UI", "Roboto", "Helvetica Neue", Arial,
+    sans-serif;
+}
 
 html,
-body {
+body,
+embed .chapter1 {
   scroll-behavior: smooth;
 }
 
-
-body::-webkit-scrollbar {
+html::-webkit-scrollbar {
   display: none;
-  overflow-y: scroll;
-} 
-
+}
 
 .chapter2 {
-      height: 100%;
+  height: 100%;
 }
 
 .chapter2 .container {
-    position: relative;
-    display: flex;
-    flex-direction: column; 
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.img-container {    
-    position: relative;
-    font-weight: 200;            
-    background: url('https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/model-3-hero-a-desktop') no-repeat center center;
-    background-size: cover;
-    /*?  height in chq unit for translate purposes - {A}  */ 
-    height: 100cqh;  
-    min-height:50cqh;  
-    width: 100vw;
+.img-container {
+  display: flex;
+  flex-grow: 1;
+  /*?  height in chq unit for translate purposes - {A}  */
+  position: relative;
+  font-weight: 200;
+  background: url("https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/model-3-hero-a-desktop")
+    no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height:100vh;
+  width: 100vw;
 }
 
 .box {
-    position: absolute;
+  display: flex;
+  position: absolute;
 }
 
 .box1 {
-    position: absolute;
-    height: 21%;
-    width: 100rem;
-
-    /*?  translate with cqw-cqh units {B}  */     
-    top: 0;
-    left: 0;
-    /*?  translate with cqw-cqh units {C}  */
-    transform: translate(50.6cqw, 6.5cqh);
+  flex-basis: 0;
+  position: absolute;
+  height: 15%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: translate(49%, 11vh);
 }
-
 
 .box2 {
-    position: absolute;
-    height: 30%;
-    width: 100rem;
-    top: 0;
-    left: 0;
-
-    transform: translate(30.5cqw, 21cqh);
+  position: absolute;
+  height: 25%;
+  width: 100%;
+  min-width: 100%;
+  top: 0;
+  left: 0;
+  transform: translate(30.8%, 28vh);
 }
 
-.box3 {    
-    height: 23%;
-    width: 100rem;    
-    top: 0;
-    left: 0;
-    transform: translate(53.4cqw, 60.5cqh);
+.box3 {
+  position: absolute;
+
+  height: 16%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* transform: translate(53cqw, 68.5cqh); */
+  transform: translate(53.5%, 62vh);
 }
 
 .dot {
-    position: absolute;
-    width: 11px;
-    height: 11px;
-    background-color: white;
-    border: 2.5px solid black;
-    border-radius: 50%;
-    left: -7px;
-  }
-  
-.box1 .dot , .box2 .dot {
-    bottom: -5px;
-  }
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background-color: white;
+  border: 2.5px solid black;
+  border-radius: 50%;
+  left: -7px;
+}
+
+.box1 .dot,
+.box2 .dot {
+  bottom: -5px;
+}
 
 .box3 .dot {
-    top: -1px;
-  }
+  top: -1px;
+}
 
-.border-anim {
-    position: absolute;
-    height: 100%;
-    width: 3.23px;
+.border-anim12 {
+  position: absolute;
+  height: 100%;
+  width: 3.23px;
+  top: 0;
+  left: -3px;
+  background-color: #000;
+  animation: expand-line 2s ease-in-out infinite;
+}
+
+@keyframes expand-line {
+  0% {
+    top: 100%;
+    height: 0%;
+  }
+  100% {
     top: 0;
-    left: -3px;
-    background-color: #000;
-    animation: expand-line 3s ease-in-out reverse infinite;
+    height: 100%;
   }
+}
 
-  @keyframes expand-line {
-    0% {
-      height: 100%;
-    }
-    100% {
-      height: 0%;
-    }
+.border-anim3 {
+  position: absolute;
+  height: 100%;
+  width: 3.23px;
+  top: 0;
+  left: -3px;
+  background-color: #000;
+  animation: expand-line3 2s ease-in-out infinite;
+}
+
+@keyframes expand-line3 {
+  0% {
+    top: 0;
+    height: 0%;
   }
-
+  100% {
+    top: 100;
+    height: 100%;
+  }
+}
 
 .info {
-    margin: 0 auto;
-    width: 90%;
-    max-width: 1116px;
-    height: 400px; 
-    gap: 1em;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1116px;
+  height: 400px;
+  gap: 1em;
 }
 
-.feature {
-    position: absolute;
-    width: fit-content;  
-    font-size: 18px;
-    left: 15px; 
+.feature12 {
+  position: absolute;
+  width: fit-content;
+  font-size: 18px;
+  left: 15px;
+  top: 10px;
+  height: 100%;
+  animation: features12 2s ease-in-out infinite;
 }
-
-.box1 .feature, .box2 .feature {
-    top: -15.5px;
+@keyframes features12 {
+  0% {
+    opacity: 0;
+    top: 100%;
   }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    top: -10px;
+  }
+}
+
+.feature3 {
+  position: absolute;
+  width: fit-content;
+  font-size: 18px;
+  left: 15px;
+  top: 10em;
+  /* top: 0;
+    left: 0; */
+  height: 100%;
+  animation: features3 2s infinite;
+}
+
+@keyframes features3 {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    top: 100%;
+  }
+}
+
+.box1 .feature,
+.box2 .feature {
+  top: -15.5px;
+}
 
 .box3 .feature {
-    bottom: -35px;
-  }
-  
-  .chapter2 .info {
-    display: flex;
-    flex-direction: column;     
-    justify-content:flex-start;
-    align-content: center;
-    width: 1116px;    
-    height: 400px;  
-    gap: 1em;
+  bottom: -35px;
+}
+
+.chapter2 .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  width: 1116px;
+  height: 400px;
+  gap: 1em;
 }
 
 .chapter2 .info .awards {
-    display: flex;
-    justify-content: flex-start;
-    font-size: 14px;    
+  display: flex;
+  justify-content: flex-start;
+  font-size: 14px;
 }
 .chapter2 .info h1 {
-    font-weight: 500;
-    padding-bottom: 16px;
+  font-weight: 500;
+  padding-bottom: 16px;
 }
 
 .chapter2 .info .p-desc {
-    padding-top: 14px;
+  padding-top: 14px;
 }
 .chapter2 .info .p-head {
-    padding: 15px 0 6px;
-    font-weight: bold;
-}
-    
-.chapter2 .info .category p {
-    width: 579px;    
+  padding: 15px 0 6px;
+  font-weight: bold;
 }
 
-.info a:link, a:visited {    
-    color:#000;
+.chapter2 .info .category p {
+  width: 579px;
+}
+
+.info a:link,
+a:visited {
+  color: #000;
 }
 
 @media only screen and (max-width: 667px) {
-    .img-container  {
-        background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/h_950,w_800,c_fit,f_auto,q_auto:best/model-3-hero-a-mobile');
-        background-position: cover;
-        height: 100vw;
-        width: 100%;
-        max-width: 100%;
-        min-width: 100%;
-        
-    } 
+  .img-container {
+    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/h_950,w_800,c_fit,f_auto,q_auto:best/model-3-hero-a-mobile");
+    background-position: center center;
+    background-size: cover;
+    /* height: 100vw; */
+    /* width: 100%; */
+    /* max-width: 100%; */
+    /* min-width: 100%; */
+  }
 
-    .feature {
-        position: absolute;
-        white-space: nowrap;  
-        font-size: 11px;
-        left: 0px; 
-    }
+  .feature12,
+  .feature3 {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 11px;
+    left: 0px;
+  }
 
-.dot {
+  .dot {
     position: absolute;
     width: 11px;
     height: 11px;
     background-color: white;
-    border: 2.5px solid black;
+    border: 3px solid black;
     border-radius: 50%;
     left: -7px;
   }
-  
-.box1 .dot , .box2 .dot {
+
+  .box1 .dot,
+  .box2 .dot {
     bottom: -5px;
   }
 
-.box3 .dot {
+  .box3 .dot {
     top: -1px;
   }
 
-.border-anim {
+  .border-anim {
     position: absolute;
     height: 100%;
     width: 3.23px;
@@ -219,5 +290,67 @@ body::-webkit-scrollbar {
     left: -3px;
     background-color: #000;
     animation: expand-line 3s ease-in-out;
+  }
+}
+
+/*  ===================  */
+
+@media screen and (min-width: 668px) and (max-width: 1550px) {
+  * {
+    border: 1px rgb(0, 255, 247) solid;
+  }
+
+  .img-container {
+    position: relative;
+    font-weight: 200;
+    background: url("https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/model-3-hero-a-desktop")
+      no-repeat center center;
+    background-size: cover;
+    /*?  height in chq unit for translate purposes - {A}  */
+    /* height: 100cqh;   */
+    min-height: 50cqh;
+    width: 100%;
+    min-width: 50cqw;
+  }
+
+  .box {
+    position: relative;
+  }
+
+  .box1 {
+    position: absolute;
+    height: 21%;
+    width: 100rem;
+    min-width: 60%;
+    /*?  translate with cqw-cqh units {B}  */
+    top: 0;
+    left: 0;
+    /*?  translate with cqw-cqh units {C}  */
+    transform: translateX(49.6cqw);
+  }
+
+  .box2 {
+    position: absolute;
+    height: 30%;
+    width: 100rem;
+    top: 0;
+    left: 0;
+
+    transform: translate(30.5cqw, 17cqh);
+  }
+
+  .box3 {
+    height: 23%;
+    width: 100rem;
+    top: 0;
+    left: 0;
+    transform: translate(53.4cqw, 48.5cqh);
+  }
+
+  .feature {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 1em;
+    left: 0px;
   }
 }

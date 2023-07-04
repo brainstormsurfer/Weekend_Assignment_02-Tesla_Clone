@@ -8,26 +8,22 @@
 }
 
 
-
-html, body {  
-  scroll-behavior: smooth;
-  overflow-y: scroll;
+  
+html, body, embed .chapter1 {
+  scroll-behavior: smooth;  
 }
 
-body::-webkit-scrollbar {
-  display: none;
-  overflow-y: scroll;
-} 
-
+  html::-webkit-scrollbar {
+        display: none;
+  } 
+  
 
 .container {
   position: relative;
   width: 100%;
   /* ? 100% screen plus single line paragraph  */
-  min-height: 100cqh;
   max-height: calc(max(100cqh) + 2rem);
-  overflow: hidden;
-  padding-top: 45px;
+  padding-top: 55px;
   background: url("https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Model-3-Main-Hero-Desktop-LHD")
     no-repeat center center fixed;
   background-size: cover;
@@ -136,7 +132,7 @@ a:link {
   align-items: center;
   height: 100vh;
   justify-content: flex-end;
-  padding-bottom: 8vh;
+  padding-bottom: 10vh;
 }
 
 .showcase-top {
@@ -292,6 +288,7 @@ a:link {
   color: #fff;
   font-size: 14px;
   white-space: nowrap;
+  height: 20px;
 }
 
 /* ? ================= ? */
@@ -302,14 +299,16 @@ a:link {
 
 @media only screen and (max-width: 760px) {
   
-body::-webkit-scrollbar {
-  overflow-y: auto;
-  display: none;
+
+html, body {  
+  scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
-html, body {
-  scroll-behavior: smooth;
-}
+body::-webkit-scrollbar {
+  display: none;
+  overflow-y: scroll;
+} 
 
 
   .chapter1 .container {
@@ -407,15 +406,17 @@ html, body {
 /* /... TABLET .../ */
 
 @media screen and (min-width: 761px) and (max-width: 1200px) {
-  
-body::-webkit-scrollbar {
-  overflow-y: auto;
-  display: none;
-}
 
-html, body {
-  scroll-behavior: smooth;
-}
+
+  html, body {  
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+  }
+  
+  body::-webkit-scrollbar {
+    display: none;
+    overflow-y: scroll;
+  } 
 
   .chapter-1 {
     height: calc(max(100vh) + 5vh);
@@ -441,9 +442,6 @@ html, body {
     flex-direction: column;
     align-items: center;
     width: 521px;
+    height: 45px;
   }
-
-  /* .showcase {
-    height: calc(max(100%) + 5%);
-  } */
 }

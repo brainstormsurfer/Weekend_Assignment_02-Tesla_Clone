@@ -10,12 +10,14 @@
 
   
 html, body, embed {
+  overflow-y: scroll;
   scroll-behavior: smooth;
+  
 }
 
-  body::-webkit-scrollbar {
+  html::-webkit-scrollbar {
         display: none;
-        overflow-y: scroll;
+
   } 
   
 
