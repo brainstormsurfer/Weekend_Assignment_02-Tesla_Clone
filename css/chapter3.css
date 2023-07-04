@@ -39,7 +39,7 @@ body {
   margin: 20px 0;
   height: 606px;
   background: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-3-Range-Hero-Desktop-NA")
-    no-repeat center center;
+  no-repeat center center;
   background-size: cover;
 }
 
@@ -89,7 +89,6 @@ aside .li-container .desc {
   width: 100%;
   height: 196px;
   padding: 24px 0 40px;
-  /* gap: 5em; */
 }
 
 .info .left {
@@ -148,24 +147,95 @@ aside .li-container .desc {
   outline-offset: -5px;
 }
 
-/* SMARTPHONE */
-@media only screen and (min-width: 441px) and (max-width: 599px) {
+
+/*** // SMARTPHONE // ***/
+
+@media only screen and (min-width: 441px) and (max-width: 670px) {
   .chapter3 {
     background-image: url(".https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-3-Range-Hero-Desktop-NA");
-    /* background-size: calc(min(100%) + auto); */
-    /* background-position: cover; */
   }
 
   .img-container {
     display: flex;
     position: relative;
   }
+  
   .img-container::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    box-shadow: inset 0px 0px 200px 0px #ff0000;
     z-index: 100;
   }
-}
+
+
+
+  .chapter3 aside {
+    border: 1px solid rgb(0, 123, 255);
+    max-height: 200px;
+    min-width: 80%;
+    display: flex;
+    padding: 0;
+    /* flex-grow: 1; */
+    flex-direction: column;
+    justify-content:center;
+ }
+
+  aside ol {
+    border: 1px solid rgb(0, 255, 38);
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 5em;
+    list-style: none;
+    justify-content: center;
+    align-items: flex-start;
+  }
+} 
+
+
+
+@media screen and (min-width: 671px) and (max-width: 900px) {
+
+    .chapter3 .img-container {
+        border: 1px solid red;
+        display: flex;
+        margin: 20px 0;
+        height: 394px;
+        width: 100%;
+        background: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-3-Range-Hero-Desktop-NA")
+        no-repeat bottom top;
+        /* -655px -312px; */
+        background-size: 220%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-content:center;
+        flex-wrap: wrap-reverse;
+      }
+      .chapter3 aside {
+        border: 1px solid rgb(0, 123, 255);
+        max-height: 200px;
+        min-width: 50%;
+        display: flex;
+        padding: 0;
+        /* flex-grow: 1; */
+        /* flex-direction: column;
+        justify-content:center; */
+     }
+    
+      aside ol {
+        border: 1px solid rgb(0, 255, 38);
+        height: 100px;
+        width: min-content;
+        display: flex;
+        flex-direction: row;
+        align-self: center;        
+        list-style: none;
+        justify-content: space-around;
+        align-items: flex-start;
+      }
+    } 
+  
+
