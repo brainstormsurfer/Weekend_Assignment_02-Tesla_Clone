@@ -120,15 +120,16 @@ aside .li-container .desc {
   height: 65px;
 }
 
-.info .left button {
+.chapter3 .info .left button,
+.chapter3 .info .right button {
   width: 204px;
-  height: 40px;
+  max-height: 40px;
   border-radius: 5px;
   font-weight: bold;
   padding: 5px 27px;
 }
 
-.info .left .btn-style3 {
+.chapter3 .info .btn-style3 {
   background: #fff;
   border: solid 3.5px #000;
   color: #000;
@@ -147,95 +148,239 @@ aside .li-container .desc {
   outline-offset: -5px;
 }
 
+.visible-mq {
+    display: none;
+}
+
 
 /*** // SMARTPHONE // ***/
 
-@media only screen and (min-width: 441px) and (max-width: 670px) {
-  .chapter3 {
-    background-image: url(".https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-3-Range-Hero-Desktop-NA");
-  }
+@media only screen and (max-width: 599px) {
+    .chapter3 .img-container {
+        display: flex;
+        margin: 20px 0;
+        height: 550px;
+        width: 100vw;
+        background: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-3-Range-Hero-Desktop-NA")
+        no-repeat bottom top;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-content:center;
+        /* flex-wrap: wrap-reverse; */
+      }
 
-  .img-container {
-    display: flex;
-    position: relative;
-  }
-  
-  .img-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 100;
-  }
+      .chapter3 aside {        
+        height:200px;        
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255)) ;
+     }
+
+     .info {    
+        padding: 3em 2em;
+      }
+      
+      aside ol {
+        background: transparent;
+        max-height: fit-content;
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+        align-self: center;        
+        list-style: none;
+        justify-content: center;
+        align-items: center;   
+        gap: 2em;   
+      }
+
+      aside ol li,
+      aside ol li h3,
+      aside ol li p {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: min-content;
+        padding: 3px;
+    }
+
+    aside ol li p {
+    font-weight: 400;  
+    font-size: .85em;
+    }
+
+    .chapter3 .info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+    }
 
 
+    .chapter3 .info .left {
+        max-height: 3em;
+    }
+    
+    .chapter3 .right p {
+       padding: 0;
+     max-height: min-content;
+     font-size: .85em;
+    }
 
-  .chapter3 aside {
-    border: 1px solid rgb(0, 123, 255);
-    max-height: 200px;
-    min-width: 80%;
-    display: flex;
-    padding: 0;
-    /* flex-grow: 1; */
-    flex-direction: column;
-    justify-content:center;
- }
+    .chapter3 .right{
+        display: block;
+        width: 100%;
+        height: 400px;
+        margin: 0 auto;
+    }
+    .chapter3 .info .right p {
+        display: block;        
+        width: 100%;
+    }
 
-  aside ol {
-    border: 1px solid rgb(0, 255, 38);
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    gap: 5em;
-    list-style: none;
-    justify-content: center;
-    align-items: flex-start;
-  }
+    .chapter3 .right .btn-container button{
+        display: block;
+        width: 100%;
+    }
+    
+    .hidden-mq {
+        display: none;
+    }
+
+    .visible-mq {
+        display:flex;
+    }
+
+    .chapter3 .right .btn-container button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+        padding: 1em;
+        color: #444;
+    }
 } 
 
 
 
-@media screen and (min-width: 671px) and (max-width: 900px) {
+@media screen and (min-width: 600px) and (max-width: 900px) {
 
     .chapter3 .img-container {
-        border: 1px solid red;
         display: flex;
         margin: 20px 0;
-        height: 394px;
+        height: 550px;
         width: 100%;
         background: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-3-Range-Hero-Desktop-NA")
         no-repeat bottom top;
-        /* -655px -312px; */
-        background-size: 220%;
+        background-size: 218%;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         align-content:center;
         flex-wrap: wrap-reverse;
       }
-      .chapter3 aside {
-        border: 1px solid rgb(0, 123, 255);
-        max-height: 200px;
-        min-width: 50%;
+      
+      .chapter3 aside {        
+        height:200px;        
+        width: 100%;
         display: flex;
-        padding: 0;
-        /* flex-grow: 1; */
-        /* flex-direction: column;
-        justify-content:center; */
+        justify-content: flex-end;
+        flex-direction: column;
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255)) ;
      }
-    
+     
+     .info {    
+        padding: 3em 2em;
+      }
+      
       aside ol {
-        border: 1px solid rgb(0, 255, 38);
-        height: 100px;
-        width: min-content;
+        background: transparent;
+        max-height: fit-content;
+        width: 400px;
         display: flex;
         flex-direction: row;
         align-self: center;        
         list-style: none;
-        justify-content: space-around;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;   
+        gap: 2em;   
       }
+
+      aside ol li,
+      aside ol li h3,
+      aside ol li p {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: min-content;
+        padding: 3px;
+    }
+
+    aside ol li p {
+    font-weight: 400;  
+    font-size: .85em;
+    }
+
+    .chapter3 .info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+
+    .chapter3 .info .left {
+        max-height: 3em;
+    }
+    
+    .chapter3 .right p {
+       padding: 0;
+     max-height: min-content;
+     font-size: .85em;
+    }
+
+    .chapter3 .right{
+        display: block;
+        width: 100%;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    .chapter3 .info .right p {
+        display: block;        
+        width: 100%;
+    }
+
+    .chapter3 .right .btn-container button{
+        display: block;
+        width: 100%;
+    }
+    
+    .hidden-mq {
+        display: none;
+    }
+
+    .visible-mq {
+        display:flex;
+    }
+
+    .chapter3 .right .btn-container button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+        padding: 1em;
+        color: #444;
+    }
     } 
   
 
