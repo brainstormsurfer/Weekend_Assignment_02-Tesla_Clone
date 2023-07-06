@@ -18,30 +18,28 @@ html::-webkit-scrollbar {
   display: none;
 }
 
-.chapter2 {
-  height: 100%;
-}
-
 .chapter2 .container {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+  min-width: 60vw;
 }
 
-.img-container {
+.chapter2 .container .img-container {
   display: flex;
-  flex-grow: 1;
   /*?  height in chq unit for translate purposes - {A}  */
   position: relative;
   font-weight: 200;
   background: url("https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/model-3-hero-a-desktop")
     no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
-  height:100vh;
+  height: 100vh;
   width: 100vw;
+  min-width: 30vw;
 }
 
 .box {
@@ -56,7 +54,7 @@ html::-webkit-scrollbar {
   width: 100%;
   top: 0;
   left: 0;
-  transform: translate(49%, 11vh);
+  transform: translate(49%, 18vh);
 }
 
 .box2 {
@@ -76,7 +74,7 @@ html::-webkit-scrollbar {
   width: 100%;
   top: 0;
   left: 0;
-  transform: translate(53.5%, 62vh);
+  transform: translate(53.5%, 58vh);
 }
 
 .dot {
@@ -138,14 +136,6 @@ html::-webkit-scrollbar {
     top: 100;
     height: 100%;
   }
-}
-
-.info {
-  margin: 0 auto;
-  width: 90%;
-  max-width: 1116px;
-  height: 400px;
-  gap: 1em;
 }
 
 .feature12 {
@@ -210,6 +200,8 @@ html::-webkit-scrollbar {
   justify-content: flex-start;
   align-content: center;
   width: 1116px;
+  min-width: 80%;
+  margin: 50px;
   height: 400px;
   gap: 1em;
 }
@@ -242,28 +234,83 @@ a:visited {
 }
 
 @media only screen and (max-width: 667px) {
-  .img-container {
-    background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/h_950,w_800,c_fit,f_auto,q_auto:best/model-3-hero-a-mobile");
-    background-position: center center;
+
+  .chapter2 .container {
+      width: 100%
+  }
+  
+  .chapter2 .container .img-container {
+    display: flex;
+    /*?  height in chq unit for translate purposes - {A}  */
+    position: relative;
+    font-weight: 200;
+    background: url("https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/model-3-hero-a-desktop")
+      no-repeat;
     background-size: cover;
+    background-position: center left;
+    height: 100vh;
+    width: 100vw;
+    min-width: 30vw;
   }
 
-  .feature12,
-  .feature3 {
+  .box1 {
+    position: absolute;
+    height: 11%;
+    width: 100rem;
+    min-width: 60%;
+    /*?  translate with cqw-cqh units {B}  */
+    top: 0;
+    left: 0;
+    /*?  translate with cqw-cqh units {C}  */
+    transform: translate(80.6cqw, 28cqh);
+  }
+
+  .box2 {
+    position: absolute;
+    height: 23%;
+    width: 100rem;
+    top: 0;
+    left: 0;
+    transform: translate(50.5cqw, 33cqh);
+  }
+
+  .box3 {
+    height: 12%;
+    width: 100rem;
+    top: 0;
+    left: 0;
+    transform: translate(80cqw, 70cqh);
+  }
+
+  .feat1-s {
     position: absolute;
     white-space: nowrap;
-    font-size: 11px;
-    left: 0px;
+    font-size: 8px;
+    left: -80px;
+  }
+
+  .feat2-s {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 8px;
+    left: -90px;
+  } 
+
+  .feat3-s {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 8px;
+    left: -90px;
   }
 
   .dot {
     position: absolute;
-    width: 11px;
-    height: 11px;
+    width: 5px;
+    height: 5px;
     background-color: white;
-    border: 3px solid black;
+    border: 1px solid black;
     border-radius: 50%;
-    left: -7px;
+    left: -5px;
   }
 
   .box1 .dot,
@@ -275,22 +322,28 @@ a:visited {
     top: -1px;
   }
 
-  .border-anim {
-    position: absolute;
-    height: 100%;
-    width: 3.23px;
-    top: 0;
-    left: -3px;
-    background-color: #000;
-    animation: expand-line 3s ease-in-out;
-  }
+  
+.border-anim12,
+.border-anim3 {
+  width: 1.2px;
+}
+
 }
 
 /*  ===================  */
 
-@media screen and (min-width: 668px) and (max-width: 1550px) {
+@media screen and (min-width: 668px) and (max-width: 1200px) {
+  .chapter2 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 934px;
+  }
 
   .img-container {
+    display: flex;
+    justify-content: center;
     position: relative;
     font-weight: 200;
     background: url("https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/model-3-hero-a-desktop")
@@ -298,8 +351,9 @@ a:visited {
     background-size: cover;
     /*?  height in chq unit for translate purposes - {A}  */
     min-height: 50cqh;
-    width: 100%;
-    min-width: 50cqw;
+    width: 70vw;
+    max-width: 100%;
+    height: fit-content
   }
 
   .box {
@@ -315,7 +369,7 @@ a:visited {
     top: 0;
     left: 0;
     /*?  translate with cqw-cqh units {C}  */
-    transform: translateX(49.6cqw);
+    transform: translate(49.6cqw, 18cqh);
   }
 
   .box2 {
@@ -325,15 +379,15 @@ a:visited {
     top: 0;
     left: 0;
 
-    transform: translate(30.5cqw, 17cqh);
+    transform: translate(30.5cqw, 21cqh);
   }
 
   .box3 {
-    height: 23%;
+    height: 17%;
     width: 100rem;
     top: 0;
     left: 0;
-    transform: translate(53.4cqw, 48.5cqh);
+    transform: translate(53.4cqw, 55.5cqh);
   }
 
   .feature {
@@ -341,5 +395,37 @@ a:visited {
     white-space: nowrap;
     font-size: 1em;
     left: 0px;
+  }
+
+  .chapter2 .info {
+    display: flex;   
+    flex-direction: column; 
+    max-width: fit-content;
+    padding: 0 180px;
+  }
+
+  .chapter2 .info h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: min-content;    
+    padding-bottom: 1em;
+  }
+
+  .chapter2 .info .p-desc{
+    margin-bottom: 12px;
+  }
+
+  .chapter2 .info .awards{
+      justify-content: space-between;
+  }
+  .chapter2 .info .category p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;    
+    max-width: 345px;        
+    height: min-content;
   }
 }
